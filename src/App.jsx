@@ -1033,6 +1033,13 @@ export default function SortidesApp() {
           </div>
         )}
       </main>
+      <footer style={{
+        textAlign:"center", padding:"16px 24px 20px",
+        fontSize:11, color:"#9ca3af", borderTop:"1px solid #e5e7eb",
+        marginTop:8,
+      }}>
+        Darrera actualització: <strong style={{color:"#6b7280"}}>{typeof __BUILD_DATE__ !== "undefined" ? __BUILD_DATE__ : "versió local"}</strong>
+      </footer>
     </div>
   );
 }
